@@ -7,7 +7,7 @@ import Location from './Pages/Location'
 
 function App() {
   return (
-    <BrowserRouter basename={window.location.pathname || ""} className="App" >
+    <BrowserRouter basename={window.location.pathname || "/art-website"} className="App" >
       <Routes>
         <Route exact path='/' element={<Main />} />
         <Route path='/location' element={<Location />} />
