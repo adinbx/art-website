@@ -1,0 +1,29 @@
+@import "config";
+
+body {
+    font-family: $ff-main;
+    font-weight: $fw-regular;
+    background-color: $white;
+    color: $dark-gray;
+}
+
+.leaflet-container {
+    height: 450px;
+    z-index: 1;
+
+    @media (min-width: 768px) {
+      height: 600px;
+    }
+    @media (orientation:landscape) {
+      height: 250px;
+    }
+    @media (min-width: 1200px) {
+      height: 750px;
+    }
+}
+
+@import "header";
+@import "about";
+@import "footer";
+@import "map";
+@import "desc";

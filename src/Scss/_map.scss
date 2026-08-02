@@ -1,0 +1,65 @@
+.map-container {
+    position: relative;
+
+    .home-btn {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 99;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 200px;
+        height: 45px;
+        text-decoration: none;
+        background-color: darken($orange, 25%);
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        cursor: pointer;
+        transition: all 0.25s ease-in-out;
+
+        @media (min-width: 1200px) {
+            width: 250px;
+            height: 50px;
+        }
+        @media (min-width: 1400px) {
+            height: 55px;
+        }
+
+        &:hover {
+            background-color: darken($orange, 10%);
+
+            button {
+                background-color: lighten($dark-gray, 20%);
+            }
+        }
+
+        button {
+            width: 80%;
+            height: 45px;
+            background-color: $dark-gray;
+            color: $white;
+            font-family: $ff-second;
+            font-size: 0.94rem;
+            letter-spacing: 2px;
+            cursor: pointer;
+            transition: all 0.25s ease-in-out;
+
+            @media (min-width: 1200px) {
+                height: 50px;
+                font-size: 1rem;
+            }
+            @media (min-width: 1400px) {
+                height: 55px;
+            }
+        }
+
+        img {
+            height: 20px;
+            padding: 0 1rem;
+
+            @media (min-width: 1200px) {
+                padding: 0 1.5rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,35 @@
+// =========== Colors.
+$white: #ffffff;
+$orange: #ead2c2;
+$light-gray: #454545;
+$dark-gray: #141414;
+
+
+
+// =========== Typography.
+$ff-main: 'Big Shoulders Display', cursive;
+$ff-second: 'Outfit', sans-serif;
+$fw-light: 300;
+$fw-regular: 400;
+$fw-medium: 500;
+$fw-semi-bold: 600;
+$fw-bold: 700;
+
+
+@mixin phone-padding {
+    padding: 0 1rem;
+
+    @media (min-width: 540px) {
+        padding: 0 2rem;
+    }
+}
+@mixin about-phone-padding {
+    padding: 5rem 1rem 4rem;
+
+    @media (min-width: 540px) {
+        padding: 6rem 2rem 5rem;
+    }
+    @media (min-width: 1200px) {
+        padding: 10rem 0 8rem;
+    }
+}
